@@ -16,6 +16,9 @@ on:
 env:
   S3_BUCKET_NAME: samyang-deploy
 
+permissions:
+  contents: read
+  
 jobs:
   build:
 
