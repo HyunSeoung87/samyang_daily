@@ -50,7 +50,7 @@ jobs:
       run: aws s3 cp --region ap-northeast-2 ./$GITHUB_SHA.zip s3://samyang-deploy/$GITHUB_SHA.zip
 
     - name: Code Deploy #4
-      run: aws deploy create-deployment --application-name samyang-daily
+      run: aws deploy create-deployment --application-name samyang-deploy
         --deployment-config-name CodeDeployDefault.OneAtATime
         --deployment-group-name samyang-deploy
         --s3-location bucket=samyang-deploy,bundleType=zip,key=$GITHUB_SHA.zip
