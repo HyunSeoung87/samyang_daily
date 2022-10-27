@@ -9,27 +9,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @SpringBootApplication
 public class SamyangDailyApplication {
-    @Configuration
-    @EnableWebSecurity
-    public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
-        @Override
-        protected void configure(HttpSecurity http) throws Exception{
-            http
-                    .csrf().disable()
-                    .authorizeRequests()
-                    .antMatchers("/", "/user/availability/**").permitAll()
-                    .anyRequest().authenticated()
-                    .and()
-                    .formLogin()
-                    .loginPage("/user/login")
-                    .permitAll()
-                    .and()
-                    .logout()
-                    .permitAll();
-        }
-
-    }
     public static void main(String[] args) {
         SpringApplication.run(SamyangDailyApplication.class, args);
 
