@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/healthcheck")
 @RequiredArgsConstructor
-public class test {
+public class healthcheck {
 
     @GetMapping()
-    public String test(HttpServletRequest request) {
-        return "content/main";
+    public String healthcheck(HttpServletRequest request) {
+        return "content/healthcheck";
     }
 }
