@@ -1,4 +1,4 @@
-package hyun.samyang_daily.entity;
-
-public class Result {
-}
+//package hyun.samyang_daily.entity;
+//
+//public class Result {
+//}
