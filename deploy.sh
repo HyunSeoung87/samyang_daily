@@ -17,5 +17,5 @@ else
 fi
 
 echo "> $JAR_PATH 배포" #3
-nohup java -jar /home/ec2-user/app/build/libs/samyang_daily-0.0.1-SNAPSHOT.jar --spring.config.location=file:/home/ec2-user/properties/application.yml /dev/null 2> /dev/null < /dev/null &
+nohup java -jar /home/ec2-user/app/build/libs/samyang_daily-0.0.1-SNAPSHOT.jar --spring.config.location=file:/home/ec2-user/properties/application.yml > /home/ec2-user/nohup.out &
 sudo sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
