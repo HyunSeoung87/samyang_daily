@@ -17,4 +17,4 @@ else
 fi
 
 echo "> $JAR_PATH 배포" #3
-nohup java -jar /home/ec2-user/app/build/libs/samyang_daily-0.0.1-SNAPSHOT.jar &
+nohup java -jar /home/ec2-user/app/build/libs/samyang_daily-0.0.1-SNAPSHOT.jar --spring.config.location=file:/home/ec2-user/properties/application.yml &
