@@ -9,5 +9,5 @@ public class SamyangDailyApplication {
         SpringApplication.run(SamyangDailyApplication.class, args);
 
     }
-
+    
 }
