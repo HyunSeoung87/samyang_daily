@@ -1,4 +1,4 @@
-package hyun.samyang_daily.dto;
+package hyun.samyang_daily.common;
 
 import lombok.Builder;
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @Builder
 public class ErrorInfo {
-    private String code;
+    private String code ;
     private String message;
 
 

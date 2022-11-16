@@ -1,4 +1,4 @@
-package hyun.samyang_daily.Controller;
+package hyun.samyang_daily.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/healthcheck")
 @RequiredArgsConstructor
-public class healthcheck {
+public class HealthCheckController {
 
     @GetMapping()
     public String healthcheck(HttpServletRequest request) {
