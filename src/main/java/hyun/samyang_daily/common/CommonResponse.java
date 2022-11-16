@@ -1,4 +1,4 @@
-package hyun.samyang_daily.dto;
+package hyun.samyang_daily.common;
 
 import lombok.Data;
 

@@ -1,7 +1,7 @@
 //package hyun.samyang_daily.Controller;
 //
 //import hyun.samyang_daily.Service.ResultService;
-//import hyun.samyang_daily.dto.CommonResponse;
+//import hyun.samyang_daily.common.CommonResponse;
 //import hyun.samyang_daily.entity.Result;
 //import lombok.RequiredArgsConstructor;
 //import org.springframework.http.ResponseEntity;
